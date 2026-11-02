@@ -1,0 +1,18 @@
+info:
+  name: Get-Tasks
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://luke-midterm-api-2026-ewfwg0gphwhreufq.westus-01.azurewebsites.net/api/tasks
+  headers:
+    - name: x-api-key
+      value: "12344020"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

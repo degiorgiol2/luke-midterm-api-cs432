@@ -1,0 +1,20 @@
+info:
+  name: Delete-task
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: https://luke-midterm-api-2026-ewfwg0gphwhreufq.westus-01.azurewebsites.net/api/tasks/cfd6a755-d449-44b4-a239-e9c9add29ddd
+  headers:
+    - name: x-api-key
+      value: "12344020"
+    - name: Content-Type
+      value: application/json
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

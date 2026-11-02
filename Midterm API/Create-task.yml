@@ -1,0 +1,39 @@
+info:
+  name: Create-task
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://luke-midterm-api-2026-ewfwg0gphwhreufq.westus-01.azurewebsites.net/api/tasks?x-api-key=12344020&Content-Type=application/json.
+  headers:
+    - name: x-api-key
+      value: "12344020"
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: x-api-key
+      value: "12344020"
+      type: query
+    - name: Content-Type
+      value: application/json.
+      type: query
+  body:
+    type: json
+    data: |
+      {
+        "title": "Health Check API",
+        "description": "Call status endpoint",
+        "priority": "high",
+        "status": "in-progress",
+        "dueDate": "2026-11-04",
+        "category": "Testing",
+        "notes": "Expect 200 OK"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

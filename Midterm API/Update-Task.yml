@@ -1,0 +1,33 @@
+info:
+  name: Update-Task
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: luke-midterm-api-2026-ewfwg0gphwhreufq.westus-01.azurewebsites.net/api/tasks/cfd6a755-d449-44b4-a239-e9c9add29ddd
+  headers:
+    - name: x-api-key
+      value: "12344020"
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "id": "cfd6a755-d449-44b4-a239-e9c9add29ddd",
+        "title": "Health Check API - Updated",
+        "description": "Call status endpoint and verify response metrics",
+        "priority": "low",
+        "status": "completed",
+        "dueDate": "2026-11-04",
+        "category": "Testing",
+        "notes": "Verified 200 OK status code successfully"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
